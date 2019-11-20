@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const schema = mongoose.Schema({
+    nome: {
+        type: String,
+        required: true
+    },
     tempo_de_preparo: {
         type: Number, //quantidade de tempo em minutos
         required: true

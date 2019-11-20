@@ -33,6 +33,7 @@ import { NgxMaskModule } from 'ngx-mask';
 import { IngredienteListComponent } from './ingrediente/ingrediente-list/ingrediente-list.component';
 import { IngredienteFormComponent } from './ingrediente/ingrediente-form/ingrediente-form.component';
 import { ReceitaListComponent } from './receita/receita-list/receita-list.component';
+import { ReceitaFormComponent } from './receita/receita-form/receita-form.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { ReceitaListComponent } from './receita/receita-list/receita-list.compon
     IngredienteListComponent,
     IngredienteFormComponent,
     ReceitaListComponent,
+    ReceitaFormComponent,
   ],
   imports: [
     HttpClientModule,

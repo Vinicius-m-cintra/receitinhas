@@ -17,7 +17,7 @@ export class ReceitaListComponent implements OnInit {
   ) { }
 
   receitas: any = []; // Vetor vazio
-  displayedColumns: string[] = ['nome', 'editar', 'excluir'];
+  displayedColumns: string[] = ['nome', 'tempo', 'editar', 'excluir'];
 
   async ngOnInit() {
     try {

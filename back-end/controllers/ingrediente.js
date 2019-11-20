@@ -6,7 +6,7 @@ controller.novo = async function (req, res) {
    try {
       await Ingrediente.create(req.body);
       // HTTP 201: Created
-      res.sendStatus(201).end();
+      res.status(201).send('');
    }
    catch (erro) {
       console.error(erro);
@@ -31,7 +31,7 @@ controller.listar = async function (req, res) {
 controller.obterUm = async function (req, res) {
    const id = req.params.id;
    try {
-      const ingrediente = await Ingredientes.findById(id);
+      const ingrediente = await Ingrediente.findById(id);
       if (ingrediente) {    // Ingredientes encontrada (variável preenchida)
          res.send(ingrediente);
       }
